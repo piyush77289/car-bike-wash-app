@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Car & Bike Wash At Home</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background: #0a3d62; color: #fff; padding: 20px; text-align: center; }
+section { padding: 20px; }
+.hero { background: #1e90ff; color: #fff; padding: 40px; text-align: center; }
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+.booking { max-width: 500px; margin: auto; border: 1px solid #ccc; padding: 20px; border-radius: 10px; }
+footer { background: #0a3d62; color: #fff; padding: 20px; text-align: center; margin-top: 40px; }
+input, select, textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+button { background: #1e90ff; color: #fff; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+button:hover { opacity: 0.9; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Car & Bike Wash At Home</h1>
+<p>Doorstep vehicle cleaning services</p>
+</header>
+
+<section class="hero">
+<h2>Premium Car & Bike Washing at Your Doorstep</h2>
+<p>Convenient • Affordable • Professional</p>
+<button onclick="document.getElementById('booking').scrollIntoView()">Book Now</button>
+</section>
+
+<section>
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">
+<h3>Bike Basic Wash</h3>
+<p>Exterior wash, foam cleaning, tyre cleaning.</p>
+</div>
+<div class="card">
+<h3>Car Foam Wash</h3>
+<p>Full foam wash, tyre cleaning, pressure wash.</p>
+</div>
+<div class="card">
+<h3>Car Interior Cleaning</h3>
+<p>Vacuum, dashboard polishing, mat wash.</p>
+</div>
+<div class="card">
+<h3>Bike Detailing</h3>
+<p>Deep cleaning, polish, chain lubrication.</p>
+</div>
+</div>
+</section>
+
+<section id="booking">
+<h2>Book a Service</h2>
+<div class="booking">
+<form>
+<label>Your Name</label>
+<input type="text" placeholder="Enter your name" required />
+
+<label>Phone Number</label>
+<input type="text" placeholder="Enter phone number" required />
+
+<label>Vehicle Type</label>
+<select required>
+<option>Bike</option>
+<option>Car</option>
+</select>
+
+<label>Service</label>
+<select required>
+<option>Bike Basic Wash</option>
+<option>Bike Full Detailing</option>
+<option>Car Foam Wash</option>
+<option>Car Interior Cleaning</option>
+</select>
+
+<label>Address</label>
+<textarea placeholder="Enter your address" required></textarea>
+
+<label>Date</label>
+<input type="date" required />
+
+<button type="submit">Confirm Booking</button>
+</form>
+</div>
+</section>
+
+<footer>
+<p>© 2025 Car & Bike Wash At Home | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
